@@ -9,7 +9,7 @@ contract Shop {
         owner = msg.sender;
     }
 
-    function pay() public payable {
+    function payForItem() public payable {
         payments[msg.sender] = msg.value;
     }
 
